@@ -1,0 +1,16 @@
+{
+  "name": "webApp",
+  "version": "0.0.1",
+  "scripts": {
+    "postinstall": "ng build --aot -prod",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "angular-cli": "1.0.0-beta.22-1",
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "6.10.2",
+    "npm": "3.10.10"
+  }
+}
