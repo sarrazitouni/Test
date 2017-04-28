@@ -1,0 +1,56 @@
+<div ng-class="$state.current.name === 'home' ? 'banner' : 'banner1'" class="agileits">
+    <div class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <h1><span class="books"></span> <a ui-sref="home">MY SCHOOL BOARD</a></h1>
+                </div>
+                <div class="top-nav">
+                    <span class="menu"> <img src="images/icon.png" alt=""></span>
+                    <nav class="cl-effect-21" id="cl-effect-21">
+                        <ul class="res" ng-show="$state.current.name === 'home'">
+                            <li><a ui-sref="home">Home</a></li>
+                            <li><a ui-sref="about">About</a></li>
+                            <li><a ui-sref="gallery">Gallery</a></li>
+                        </ul>
+                        <ul class="res" ng-show="checkIfAdminState($state)=='admin'">
+                            <li ui-sref="adminDepartment"><a>Departements</a></li>
+                            <li ui-sref="adminStudent"><a>Students</a></li>
+                            <li ui-sref="adminTeacher"><a>Teachers</a></li>
+                            <li ui-sref="adminParent"><a>Parents</a></li>
+                            <li ui-sref="adminEvent"><a>Events</a></li>
+                            <li ui-sref="adminClass"><a>Classes</a></li>
+                            <li ui-sref="adminInternship"><a>Internships</a></li>
+                            <li ui-sref="adminClass"><a>Forum</a></li>
+                        </ul>
+                        <ul class="res" ng-show="checkIfAdminState($state)=='student'">
+                            <li><a>Absence</a></li>
+                            <li><a>Results</a></li>
+                            <li><a>Internships</a></li>
+                            <li><a>Forum</a></li>
+                        </ul>
+                        <ul class="res" ng-show="checkIfAdminState($state)=='parent'">
+                            <li><a>Absence</a></li>
+                            <li><a>Results</a></li>
+                        </ul>
+                        <ul class="res" ng-show="checkIfAdminState($state)=='Teacher'">
+                            <li><a>Absence</a></li>
+                            <li><a>Results</a></li>
+                        </ul>
+                    </nav>
+                    <!-- script-for-menu -->
+                    <script>
+                        $("span.menu").click(function() {
+                            $("ul.res").slideToggle(300, function() {
+                                // Animation complete.
+                            });
+                        });
+                    </script>
+                    <!-- /script-for-menu -->
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>

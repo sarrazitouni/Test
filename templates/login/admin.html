@@ -1,0 +1,16 @@
+<div class="single">
+    <div class="single-bottom">
+        <h2>Login</h2>
+        <form novalidate>
+            <div class="col-md-12 comment">
+                <input ng-class="{ 'validationClass': badCredentials }" type="text" name="cin" ng-model="credentials.cin" placeholder="CIN" required="">
+            </div>
+            <div class="col-md-12 comment">
+                <input ng-class="{ 'validationClass': badCredentials }" type="password" name="password" ng-model="credentials.password" placeholder="Password">
+            </div>
+            <div class="clearfix"> </div>
+            <div class="clearfix"> </div>
+            <input type="submit" value="Login" ng-click="loginAdmin()">
+        </form>
+    </div>
+</div>

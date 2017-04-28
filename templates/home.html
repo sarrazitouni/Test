@@ -1,0 +1,101 @@
+<div class="education-main">
+    <ul class="ch-grid">
+        <div class="col-md-3 w3agile">
+            <li>
+                <a ui-sref="loginAdmin">
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <div class="ch-info-front ch-img-1">
+                                <span class="glyphicon glyphicon-grain" aria-hidden="true"> </span>
+                                <h5>Administrator</h5>
+                            </div>
+                            <div class="ch-info-back">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </div>
+        <div class="col-md-3 w3agile">
+            <li>
+                <a ui-sref="loginTeacher">
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <div class="ch-info-front ch-img-2">
+                                <span class="glyphicon glyphicon-education" aria-hidden="true"> </span>
+                                <h5>Teachers</h5>
+                            </div>
+                            <div class="ch-info-back">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </div>
+        <div class="col-md-3 w3agile">
+            <li>
+                <a ui-sref="loginStudent">
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <div class="ch-info-front ch-img-3">
+                                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"> </span>
+                                <h5>Students</h5>
+                            </div>
+                            <div class="ch-info-back">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </div>
+        <div class="col-md-3 w3agile">
+            <li>
+                <a ui-sref="loginParent">
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <div class="ch-info-front ch-img-4">
+                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"> </span>
+                                <h5>Parents</h5>
+                            </div>
+                            <div class="ch-info-back">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a>
+            </li>
+        </div>
+        <div class="clearfix"> </div>
+    </ul>
+</div>
+
+<!--event start here-->
+<div class="events">
+    <div class="container">
+        <div class="events-main">
+            <div class="events-top">
+                <h3>Events</h3>
+            </div>
+            <div ng-repeat="e in events" class="events-grid">
+                <div class="col-md-3 event-month wthree">
+                    <h3>{{e.place}}</h3>
+                    <h4>{{e.category}}</h4>
+                </div>
+                <div class="col-md-5 event-text">
+                    <h4>{{e.name}}</h4>
+                    <p>{{e.description}}</p>
+                    <p> </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--event end here--
